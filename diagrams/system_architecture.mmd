@@ -1,0 +1,13 @@
+# System Architecture
+
+```mermaid
+graph TD
+    A[User Interface - Streamlit Dashboard] --> B[Prediction Service]
+    B --> C[Machine Learning Model]
+    C --> D[Data Preprocessing Pipeline]
+    D --> E[Student Dataset]
+    F[Model Training Module] --> C
+    F --> G[Training Data]
+    H[Evaluation Metrics] --> F
+    I[Visualization Engine] --> A
+```

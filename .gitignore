@@ -1,0 +1,41 @@
+# Python cache and packaging
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+env/
+.venv/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit and application outputs
+outputs/
+*.log
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+
+# Runtime files
+*.pid
+*.seed

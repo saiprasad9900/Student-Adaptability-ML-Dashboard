@@ -1,0 +1,17 @@
+# Activity Diagram
+
+```mermaid
+graph TD
+    A[Start] --> B[User Accesses Dashboard]
+    B --> C{Choose Action}
+    C -->|Single Prediction| D[Input Student Data]
+    C -->|Batch Prediction| E[Upload CSV File]
+    C -->|View Analytics| F[Display Model Metrics]
+    D --> G[Preprocess Data]
+    E --> G
+    G --> H[Run Prediction Model]
+    H --> I[Generate Results]
+    I --> J[Display Output]
+    F --> J
+    J --> K[End]
+```

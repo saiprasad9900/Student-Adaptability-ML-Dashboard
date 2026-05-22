@@ -1,0 +1,11 @@
+# Collaboration Diagram
+
+```mermaid
+graph TD
+    U[User] -->|interacts| S[Streamlit App]
+    S -->|processes| D[Data Processor]
+    S -->|predicts| M[ML Model]
+    D -->|returns processed data| S
+    M -->|returns predictions| S
+    S -->|displays| U
+```

@@ -1,0 +1,19 @@
+# Use Case Diagram
+
+```mermaid
+usecase "Predict Student Adaptability" as UC1
+usecase "Upload Custom Dataset" as UC2
+usecase "View Model Performance" as UC3
+usecase "Batch Prediction" as UC4
+usecase "Exploratory Data Analysis" as UC5
+actor "Student" as S
+actor "Teacher" as T
+actor "Administrator" as A
+S --> UC1
+T --> UC1
+T --> UC2
+T --> UC3
+T --> UC4
+A --> UC5
+A --> UC3
+```

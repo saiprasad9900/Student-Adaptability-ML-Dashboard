@@ -1,0 +1,15 @@
+# Sequence Diagram
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant S as Streamlit App
+    participant M as ML Model
+    participant D as Data Processor
+    U->>S: Upload Student Data
+    S->>D: Preprocess Data
+    D-->>S: Processed Data
+    S->>M: Make Prediction
+    M-->>S: Prediction Results
+    S-->>U: Display Results
+```

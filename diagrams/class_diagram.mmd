@@ -1,0 +1,28 @@
+# Class Diagram
+
+```mermaid
+classDiagram
+    class StudentAdaptabilityPredictor {
+        +load_model()
+        +predict(data)
+        +preprocess_data(data)
+    }
+    class DataPreprocessor {
+        +encode_categorical(data)
+        +scale_features(data)
+        +handle_missing(data)
+    }
+    class ModelTrainer {
+        +train_model(X, y)
+        +evaluate_model(model, X_test, y_test)
+        +save_model(model)
+    }
+    class StreamlitApp {
+        +run_app()
+        +display_predictions()
+        +show_analytics()
+    }
+    StudentAdaptabilityPredictor --> DataPreprocessor
+    StudentAdaptabilityPredictor --> ModelTrainer
+    StreamlitApp --> StudentAdaptabilityPredictor
+```

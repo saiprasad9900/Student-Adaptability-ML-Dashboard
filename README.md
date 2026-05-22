@@ -26,31 +26,18 @@ This project is a Streamlit dashboard for analyzing student adaptability data, v
    streamlit run streamlit_app.py
    ```
 
-## GitHub deployment
+## GitHub repository
 
-To publish this project to GitHub, run the following from the project root:
+**Live repo:** https://github.com/saiprasad9900/Student-Adaptability-ML-Dashboard
 
-```bash
-cd c:\Users\dell\OneDrive\Documents\Major_Project
+## Deploy to Streamlit Cloud (live web app)
 
-git init
-git add .
-git commit -m "Initial commit"
-```
+1. Open [https://share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+2. Click **Create app** → **From existing repo**.
+3. Select **saiprasad9900/Student-Adaptability-ML-Dashboard**, branch **main**.
+4. Set **Main file path** to `streamlit_app.py`, then click **Deploy**.
 
-Then create a repository on GitHub and add the remote URL. Replace `USERNAME` and `REPO` with your values:
-
-```bash
-git remote add origin https://github.com/USERNAME/REPO.git
-git branch -M main
-git push -u origin main
-```
-
-## Optional: Deploy to Streamlit Cloud
-
-1. Push the repository to GitHub.
-2. Go to https://streamlit.io/cloud and connect your GitHub account.
-3. Select this repository and deploy the app.
+After deployment, Streamlit gives you a public URL (for example `https://student-adaptability-ml-dashboard.streamlit.app`).
 
 ## Notes
 
